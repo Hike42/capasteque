@@ -36,7 +36,6 @@ export const Contact = () => {
           }}
           mt={4}
         >
-          I'll keep it simple.
         </Heading>
         <Text fontSize={"3xl"}>Here is my email</Text>
         <Text
@@ -45,7 +44,7 @@ export const Contact = () => {
             md: "4xl",
           }}
           mt={8}
-          color={useColorModeValue("blue.500", "blue.300")}
+          color={useColorModeValue("red.500", "red.300")}
           as={Link}
           href={`mailto:${me.contact.email}`}
           target="_blank"

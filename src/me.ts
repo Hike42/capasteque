@@ -4,141 +4,101 @@ import {
   FaLinkedin,
   FaNode,
   FaReact,
+  FaFigma,
 } from "react-icons/fa";
 import {
-  SiC,
-  SiGooglecloud,
   SiJavascript,
-  SiKubernetes,
   SiPython,
   SiTypescript,
+  SiLua,
+  SiMaterialui,
 } from "react-icons/si";
 
 import { IMe } from "./me.interface";
 
 export const me = {
-  name: "Mohammad Arham",
-  subtitle: "Computer Engineering Student & Backend Developer",
+  name: "Baptiste Verdier",
+  subtitle: "Web Developer student & Software Engineer",
   tagline:
-    "I am a computer engineering student who loves to build software to create fun experiences.",
+    "I am a web developing student based in Paris, mainly focused on frontend through ReactJS",
   about:
-    "Junior Computer Engineering student building production ready systems for my startup. I love making fun projects on the side usually for the memes. Checkout some of my recent projects below.",
-  location: "Amherst, MA",
-  image: "/assets/arhammusheer.jpeg",
+    "Hi, I am Baptiste, I am 19 years old. I was born and I live in Paris. I started learnign development during the 2020 ockdown with Lua. I learned the basics of C at Ecole 42 during August 2021. Since sept, 2021 I learn web development at Hetic. I now work for a Large scale-up/Unicorn as a Softawre Engineer specialized in frontend; especially ReactJS",
+  location: "Paris, France",
+  image: "/assets/lapp.png",
+  wall: "/assets/wall.jpeg",
   education: [
     {
-      degree: "Bachelors of Science",
-      major: "Computer Engineering",
-      school: "University of Massachusetts Amherst",
-      graduation: "May 2024",
-      awards: ["Chancellor's Award: $12,000"],
+      degree: "Bachelors Developer Web",
+      major: "- Master CTO & Lead Tech",
+      school: "HETIC",
+      graduation: "2021 - 2024",
+      awards: [""],
+    },
+    {
+      degree: "Baccalauréat, France",
+      major: "- Physical Sciences, Mathematics, Economic Sciences",
+      school: "Institut de l'Assomption Lübeck",
+      graduation: "2021",
+      awards: [""],
     },
   ],
   experience: [
     {
-      company: "University of Massachusetts Amherst",
-      location: "Amherst, MA",
-      position: "IT Computer Classroom Assistant",
-      duration: "Fall 2021 - Present",
+      company: "Manomano.com",
+      location: "Paris XVII & Bordeaux, France ",
+      position: "Software Engineer",
+      duration: "Fall 2022 - Present",
       bullets: [
-        "Provided phone and in-person support for classroom technical issues.",
-        "Maintained and imaged the upkeep IT classroom computers.",
+        "",
       ],
     },
     {
-      company: "Cisco Systems",
-      location: "Bangalore, India",
-      position: "Front End Developer Intern - Talent Outreach Program",
-      duration: "Aug 2019 - Feb 2020",
+      company: "Bleeker",
+      location: "Paris IX, France",
+      position: "Fullstack Developer Intern",
+      duration: "July - September 2022",
       bullets: [
-        "Collaborated with other team members to create an event management platform for high schools.",
-        "Developed a responsive design implementing a mobile-first approach.",
-        "Supported entire CRUD operations on the front end for the REST API.",
-        "Designed and developed a desktop and mobile UI dashboard for a Django WebApp.",
+        "",
       ],
     },
   ],
   projects: [
     {
-      name: "Croissant.one (This Website)",
-      description: "A website to showcase my projects and resume",
+      name: "Capastèque (this site)",
+      description: "A website to present my career, skills and projects, named after someone I love.",
       contribution:
-        "I built the entire website from scratch using React.js, TypeScript, and Chakra UI and deployed it on Vercel.",
+        "",
       technologies: ["React", "Typescript", "Chakra-UI", "Vercel"],
       links: [
         {
           name: "Website",
-          uri: "https://croissant.one",
+          uri: "https://bmvh.me",
         },
         {
           name: "Github",
-          uri: "https://github.com/arhammusheer/croissant.one",
+          uri: "https://github.com/Hike42/capasteque",
         },
       ],
-      image: "/assets/croissant.svg",
+      image: "/assets/pasteque.png",
     },
     {
-      name: "AudioShelf",
+      name: "Bleeker Documentation",
       description:
-        "A mobile app with over 2k users to discover audiobooks in 30 languages and summarize them in 5 minutes",
+        "A documentation made to help customer developers to integrate Bleeker© solution to their website",
       contribution:
-        "I built the backend infrastructure for the app including authentication systems, OAuth Scope and a REST API. I also built an internal CMS dashboard to manage content publishing and translations.",
+        "I built the whole website by myself, including search engine and language features. It is easily editable thanks to Markdown. For confidentiality reasons, the code isn't open source",
       technologies: [
+        "React",
         "Node.js",
-        "Express",
-        "MongoDB",
-        "Google Cloud",
-        "Docker",
-        "OAuth2",
+        "Amplify",
       ],
       links: [
         {
           name: "Website",
-          uri: "https://getaudioshelf.com",
-        },
-        {
-          name: "Play Store",
-          uri: "https://play.google.com/store/apps/details?id=com.audioshelfapp",
+          uri: "https://doc.bleeker.live",
         },
       ],
-      image: "https://content.getaudioshelf.com/logo.png",
-    },
-    {
-      name: "Dad API",
-      description: "A REST API to get dad jokes and pickup lines",
-      contribution:
-        "I built the entire API from scratch using Node.js and Express and deployed it on Google Cloud Run.",
-      technologies: ["Node.js", "Express", "Google Cloud", "Docker"],
-      links: [
-        {
-          name: "Joke Endpoint",
-          uri: "https://dad.croissant.one/api/joke",
-        },
-        {
-          name: "Pickup Line Endpoint",
-          uri: "https://dad.croissant.one/api/pickup",
-        },
-        {
-          name: "Github",
-          uri: "https://github.com/arhammusheer/dad-api",
-        },
-      ],
-      image: "/assets/dad.png",
-    },
-    {
-      name: "Loud Noises",
-      description:
-        "A web app to play loud noises when you're in the same chat room as them. Press the big red button to play a list of sounds on their device. No registration required.",
-      contribution:
-        "Built a full stack app with socket.io and deployed it on Heroku.",
-      technologies: ["Node.js", "Express", "Socket.io", "Heroku", "Bootstrap"],
-      links: [
-        {
-          name: "Website",
-          uri: "https://loudnoises.herokuapp.com/",
-        },
-      ],
-      image: "/assets/big-red-button.svg",
+      image: "/assets/logo.png",
     },
   ],
   skills: [
@@ -155,10 +115,6 @@ export const me = {
       icon: SiPython,
     },
     {
-      name: "Clang",
-      icon: SiC,
-    },
-    {
       name: "React",
       icon: FaReact,
     },
@@ -167,29 +123,23 @@ export const me = {
       icon: FaNode,
     },
     {
-      name: "Docker",
-      icon: FaDocker,
-    },
-
-    {
-      name: "Google Cloud",
-      icon: SiGooglecloud,
+      name: "Figma",
+      icon: FaFigma,
     },
     {
-      name: "Kubernetes",
-      icon: SiKubernetes,
+      name: "Lua",
+      icon: SiLua,
+    },
+    {
+      name: "MaterialUI",
+      icon: SiMaterialui,
     },
   ],
   social: [
-    // {
-    //   name: "Website",
-    //   icon: FaGlobe,
-    //   uri: "https://croissant.one",
-    // },
     {
       name: "Github",
       icon: FaGithub,
-      uri: "https://github.com/arhammusheer",
+      uri: "https://github.com/Hike42",
       hover: {
         bg: "gray.900",
         color: "white",
@@ -198,7 +148,7 @@ export const me = {
     {
       name: "LinkedIn",
       icon: FaLinkedin,
-      uri: "https://www.linkedin.com/in/mohammad-arham/",
+      uri: "https://www.linkedin.com/in/baptiste-verdier-a4a467214/",
       hover: {
         bg: "blue.500",
         color: "white",
@@ -207,6 +157,6 @@ export const me = {
   ],
 
   contact: {
-    email: "arhammusheer@gmail.com",
+    email: "baptiste.verd@gmail.com",
   },
 } as IMe;

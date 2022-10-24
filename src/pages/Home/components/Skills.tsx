@@ -28,7 +28,7 @@ export const Skills = () => {
     >
       <Box w={"full"}>
         <Heading as={"h2"} fontSize={"3xl"}>
-          Skills/Technologies
+          Skills & Technologies
         </Heading>
         <Stack direction={"row"} spacing={4} rowGap={4} mt={8} wrap={"wrap"}>
           {me.skills.map((skill, index) => (
@@ -79,7 +79,7 @@ const SingleSkill = ({
       <Stack
         direction={"row"}
         align={"center"}
-        bg={useColorModeValue("blue.100", "gray.900")}
+        bg={useColorModeValue("red.100", "red.900")}
         px={2}
         py={1}
         borderRadius={"xl"}

@@ -41,7 +41,9 @@ export const Hero = () => {
       <Stack
         h={"full"}
         w={"full"}
-        bg={useColorModeValue("blue.100", "gray.900")}
+        bgImage={"../../../../public/assets/wall.jpeg"}
+        backgroundSize={"cover"}
+        backgroundRepeat={"no-repeat"}
         rounded={"3xl"}
         border={"1px"}
         borderColor={useColorModeValue("gray.200", "gray.700")}
@@ -56,12 +58,12 @@ export const Hero = () => {
           fontWeight={"normal"}
           as={"h1"}
           size={"3xl"}
-          color={useColorModeValue("blue.700", "gray.100")}
+          color={useColorModeValue("red.700", "red.100")}
         >
           Hi, I'm {me.name}
         </Heading>
-        <Text fontSize={"2xl"}>{me.subtitle}</Text>
-        <Text fontSize={"xl"}>{me.tagline}</Text>
+        <Text fontSize={"2xl"} color={"white"} text-shadow={"2px 1px 1px black"} >{me.subtitle}</Text>
+        <Text fontSize={"xl"} color={"white"}>{me.tagline}</Text>
         <Box mt={8} />
         <Stack direction={"row"} spacing={2}>
           {me.social.map((social) => (
@@ -113,7 +115,7 @@ const Social = ({
         href={url}
         target={"_blank"}
         align={"center"}
-        bg={useColorModeValue("white", "gray.800")}
+        bg={useColorModeValue("white", "white.800")}
         px={4}
         py={1}
         rounded={"full"}

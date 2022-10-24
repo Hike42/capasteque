@@ -75,11 +75,11 @@ const SingleProject = ({
       direction={"column"}
       w={"full"}
       h={"full"}
-      bg={useColorModeValue("blue.50", "gray.900")}
+      bg={useColorModeValue("red.50", "gray.900")}
       p={6}
       borderRadius={"2xl"}
       border={"1px"}
-      borderColor={useColorModeValue("blue.200", "gray.700")}
+      borderColor={useColorModeValue("red.200", "gray.700")}
       as={motion.div}
       justify={"center"}
       whileHover={{
@@ -99,7 +99,7 @@ const SingleProject = ({
         <Heading
           as={"h3"}
           fontSize={"2xl"}
-          color={useColorModeValue("blue.700", "white")}
+          color={useColorModeValue("red.700", "white")}
         >
           {name}
         </Heading>
@@ -114,8 +114,7 @@ const SingleProject = ({
       </Stack>
       <Text>{description}</Text>
       <Box h={2} />
-      <Heading as={"h4"} fontSize={"lg"} color={"blue.600"}>
-        What I did
+      <Heading as={"h4"} fontSize={"lg"} color={"red.600"}>
       </Heading>
       <Text>{contribution}</Text>
       <Box h={5} />
@@ -133,8 +132,8 @@ const SingleProject = ({
 const Pill = ({ children }: { children: string }) => {
   return (
     <Box
-      bg={"blue.100"}
-      color={"blue.800"}
+      bg={"red.100"}
+      color={"red.800"}
       px={2}
       py={0.5}
       borderRadius={"2xl"}
@@ -154,7 +153,7 @@ const OutLink = ({ children, href }: { children: string; href: string }) => {
       target={"_blank"}
       rel={"noreferrer"}
       align={"center"}
-      color={"blue.500"}
+      color={"red.500"}
     >
       {children}&nbsp;
       <Icon as={FiExternalLink} />

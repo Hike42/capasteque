@@ -64,18 +64,18 @@ const DesktopOptions = () => {
           to={option.href}
           smooth={true}
           cursor={"pointer"}
-          bg={useColorModeValue("blue.50", "gray.700")}
+          bg={useColorModeValue("red.50", "red.700")}
           px={4}
           py={1}
           rounded={"md"}
           _hover={{
-            bg: useColorModeValue("blue.100", "gray.600"),
+            bg: useColorModeValue("red.100", "red.600"),
           }}
           transition={"all 0.2s ease-in-out"}
         >
           <Text
             fontWeight={"bold"}
-            color={useColorModeValue("blue.700", "gray.100")}
+            color={useColorModeValue("red.700", "red.100")}
           >
             {option.name}
           </Text>

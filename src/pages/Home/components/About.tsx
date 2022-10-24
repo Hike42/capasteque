@@ -45,8 +45,8 @@ export const About = () => {
         minH={"60vh"}
         w={"full"}
         bgGradient={useColorModeValue(
-          "linear(to-b, white, blue.200, white)",
-          "linear(to-b, black, blue.800, black)"
+          "linear(to-b, white, white.200, white)",
+          "linear(to-b, black, white.800, black)"
         )}
         align={"center"}
         justify={"center"}
@@ -76,21 +76,18 @@ export const About = () => {
               }}
               color={useColorModeValue("gray.800", "gray.100")}
             >
-              I make things{" "}
+              Discover :{" "}
               <Text
                 as={"span"}
-                color={useColorModeValue("blue.600", "blue.300")}
+                color={useColorModeValue("red.600", "red.300")}
               >
-                for the web
+                me
               </Text>
             </Heading>
           </GridItem>
           <GridItem>
             <Flex w={"full"} h={"full"}>
               <Box>
-                <Heading as={"h2"} fontSize={"3xl"}>
-                  About
-                </Heading>
                 <Text fontSize={"lg"} mt={4}>
                   {me.about}
                 </Text>

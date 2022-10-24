@@ -73,7 +73,7 @@ const SingleEducation = ({
           {school}
         </Heading>
         <Heading as={"h4"} fontSize={"xl"} fontWeight={"normal"}>
-          {degree} in {major}
+          {degree} {major}
         </Heading>
         <Heading as={"h5"} fontSize={"md"} fontWeight={"normal"}>
           {graduation}
