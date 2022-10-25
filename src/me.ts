@@ -25,7 +25,6 @@ export const me = {
     "Hi, I am Baptiste, I am 19 years old. I was born and I live in Paris. I started learning development during the 2020 lockdown with Lua. I learned the basics of C at Ecole 42 during August 2021. Since sept, 2021 I learn web development at Hetic. I now work for a Large scale-up/Unicorn as a Softawre Engineer specialized in frontend; especially ReactJS",
   location: "Paris, France",
   image: "/assets/lapp.png",
-  wall: "/assets/wall.jpeg",
   education: [
     {
       degree: "Bachelors Developer Web",
