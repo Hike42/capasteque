@@ -41,7 +41,7 @@ export const Hero = () => {
       <Stack
         h={"full"}
         w={"full"}
-        bgImage={"../../../../../public/assets/wall.png"}
+        backgroundImage={"../../../../../public/assets/wall.png"}
         backgroundSize={"cover"}
         backgroundRepeat={"no-repeat"}
         rounded={"3xl"}
